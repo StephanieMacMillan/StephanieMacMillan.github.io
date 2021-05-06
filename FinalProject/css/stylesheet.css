@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Quattrocento&display=swap');
+
+body {
+  font-family: 'quattrocento', serif;
+  background-color: #faf6f2;
+}
+
+
+p{
+  font-family: 'quattrocento', serif;
+  color: #ae887b
+}
+
+
+h1 {
+  font-family: 'oswald', sans-serif;
+  color: #faf6f2;
+  text-align: left;
+  font-size: 40px;
+  padding-left: 10px;
+}
+
+
+h2{
+  font-family: 'oswald', sans-serif;
+  color: #d49e8d;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  width: 20px;
+}
+
+
+nav{
+  padding: 0px 0px;
+  margin-top: 30px;
+  font-family: 'quattrocento', serif;
+  font-size: 20px;
+  grid-area: nav;
+}
+
+
+nav ul {
+  padding: 10px;
+  list-style-type: none;
+}
+
+
+nav li {
+  font-weight: bold;
+  margin-right: 0px;
+  margin-top:0px;
+  padding: 15px;
+}
+
+
+nav a{
+  color: #d49e8d;
+}
+
+
+nav a:link,
+nav a:visited {
+  color: #d49e8b;
+  text-decoration: none;
+}
+
+
+nav a:hover {
+  color: #683b2b;
+}
+
+
+nav a:active{
+  color: #ffffff;
+}
+
+
+section {
+  padding: 20px;
+}
+
+
+
+#container {
+  display: grid;
+  grid-template-rows: 0fr 7fr .5fr;
+  grid-template-columns: 2fr 5fr 3fr;
+  grid-template-areas:
+    "header header header"
+    "nav main main"
+    "footer footer footer";
+  grid-gap: 0px;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+header {
+  grid-area: header;
+  background-color: #d49e8d;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+
+
+#homepage main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+  padding-top: 10px;
+}
+
+
+
+
+#painting main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 50%;
+}
+
+
+
+
+
+
+footer{
+  grid-area: footer;
+  padding-left: 20px;
+  padding-top: 20px;
+}
